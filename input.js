@@ -10,6 +10,9 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+const message1 = "Say: ssssssssssssssssssss..";
+const message2 = "Say: move ssssssss...";
+
 const handleUserInput = function(key) {
   // \u0003 maps to ctrl+c input
   if (key === '\u0003') {
@@ -31,6 +34,15 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     connection.write("Move: right");
   }
+
+  if (key === "1") {
+    connection.write(message1);
+  }
+
+  if (key === "2") {
+    connection.write(message2);
+  }
+
 };
 
 module.exports = { setupInput, handleUserInput };

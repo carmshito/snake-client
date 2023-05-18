@@ -17,8 +17,6 @@ const connect = function () {
 
   });
 
-  // conn.write("Move: up");
-
   conn.on("data", (data) => {
     console.log(data);
   });
