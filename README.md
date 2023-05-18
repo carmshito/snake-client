@@ -8,9 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
-
+https://github.com/carmshito/snake-client/assets/81939572/7b14f335-557b-4250-bb65-f2ad30c729c5
 
 ## Getting Started
 
