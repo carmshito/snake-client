@@ -10,8 +10,6 @@ Before you can run this client, you will need to be running the server side whic
 
 ![snake gif](https://github.com/carmshito/snake-client/assets/81939572/28836fc0-1d2b-4e40-9a88-84f0c988aa15)
 
-![snake gif](https://github.com/carmshito/snake-client/assets/81939572/28836fc0-1d2b-4e40-9a88-84f0c988aa15)
-
 ## Getting Started
 
 - Follow steps inside the [snek](https://github.com/taniarascia/snek) server repo to run the server side
