@@ -1,3 +1,5 @@
+const { messages } = require("./constants");
+
 let connection;
 
 const setupInput = function(conn) {
@@ -9,9 +11,6 @@ const setupInput = function(conn) {
   stdin.on("data", handleUserInput);
   return stdin;
 };
-
-const message1 = "Say: ssssssssssssssssssss..";
-const message2 = "Say: move ssssssss...";
 
 const handleUserInput = function(key) {
   // \u0003 maps to ctrl+c input
@@ -35,14 +34,10 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
   }
 
-  if (key === "1") {
-    connection.write(message1);
-  }
-
-  if (key === "2") {
-    connection.write(message2);
+  if (messages[key]) {
+    connection.write(messages[key]);
   }
 
 };
 
-module.exports = { setupInput, handleUserInput };
+module.exports = { setupInput };
